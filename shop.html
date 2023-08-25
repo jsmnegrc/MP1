@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIRL ALMIGHTY</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #dbbfcdcc;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      role="navigation"
+      style="background-color: #000"
+    >
+      <div class="container">
+        <span class="logo"
+          >GIRL <i class="fa fa-heart red-color"></i> ALMIGHTY</span
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center m-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">SHOP</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex text-center gap-3">
+            <span><i class="far fa-heart"></i> Favorites</span>
+            <span class="m-0"
+              ><i class="fa-solid fa-cart-shopping"
+                ><a href="checkout.html"> Cart</a></i
+              ></span
+            >
+            <span><i class="far fa-user data px-2"></i> Sign in</span>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- shop -->
+
+    <section>
+      <div class="shop-container">
+        <div class="row">
+          <div class="col-12">
+            <div>
+              <ul class="nav nav-underline">
+                <li class="nav-item">
+                  <a class="nav-link" href="#all" data-bs-toggle="tab">PANTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skirt" data-bs-toggle="tab"
+                    >SKIRT</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tees" data-bs-toggle="tab">TEES</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="all" class="active tab-pane fade">
+                  <h1 class="text-center mt-5">EMPOWER FITS DEMIN</h1>
+                  <div class="row g-4 pt-5">
+                    <div class="col-lg-4">
+                      <div class="card">
+                        <img src="./images/p item 1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bolsd"
+                              >Jenny Jeans Two Strike</span
+                            >
+                            <span class="font-weight-bold">₱499</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 1.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">
+                                      Jenny Jeans Two Strike
+                                    </div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱499</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end modal -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Street Style Cargo Jeans</span
+                            >
+                            <span class="font-weight-bold">₱579</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal2"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel2"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel2"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 2.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">
+                                      Street Style Cargo Jeans
+                                    </div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱579</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end modal -->
+                    <!-- pants -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 3.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Cargo Jeans in Pink</span
+                            >
+                            <span class="font-weight-bold">₱599</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end shop -->
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal3"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel3"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel3"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 3.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Cargo Jeans in Pink</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱599</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- pants -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 4.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Cowboy Jeans in Brown</span
+                            >
+                            <span class="font-weight-bold">₱599</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal4"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal4"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel4"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel4"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 4.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Cowboy Jeans in brown</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱599</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <!-- pants -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 5.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Butterfly Denim Jeans</span
+                            >
+                            <span class="font-weight-bold">₱499</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal4"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal4"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel4"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel4"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 4.jpg+"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Cowboy Jeans in brown</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱599</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end pants -->
+                    <!-- pants -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 6.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Crossed Denim Jeans</span
+                            >
+                            <span class="font-weight-bold">₱599</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal6"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal6"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel6"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel6"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 6.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Crossed Denim Jeans</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱599</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end pants -->
+
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 7.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Classic Jeans Denim</span
+                            >
+                            <span class="font-weight-bold">₱599</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal7"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal7"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel7"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel7"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 7.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Classic Jeans Denim</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱599</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end pants -->
+                    <!-- pants -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/p item 8.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Utility and Go</span>
+                            <span class="font-weight-bold">₱699</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal8"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal8"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel8"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel8"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 8.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Utility and Go</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱699</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- pants -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img
+                          src="./images/p item 9.jpg."
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Versitile Apricot Jeans</span
+                            >
+                            <span class="font-weight-bold">₱485</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal9"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal9"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabel9"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel9"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/p item 9.jpg.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">
+                                      Versitile Apricot Jeans
+                                    </div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱485</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- div -->
+                  </div>
+                </div>
+                <!-- END PANTS -->
+                <!-- SKIRT -->
+                <div id="skirt" class="tab-pane in show">
+                  <h1 class="text-center mt-5">SKIRT/SKORT</h1>
+                  <div class="row g-4 pt-5">
+                    <div class="col-lg-4">
+                      <div class="card">
+                        <img src="./images/s 1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold text-muted"
+                              >Barbie Skirt</span
+                            >
+                            <span class="font-weight-bold">₱519</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModals1"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModals1"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabels1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabels1"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/s 1.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Barbie Skirt</div>
+                                    <div class="row text-muted">GA Skirt</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱519</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/s2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Cowboy Skirt</span>
+                            <span class="font-weight-bold">₱499</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModals2"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModals2"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabels2"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabels2"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/s2.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Cowboy Skirt</div>
+                                    <div class="row text-muted">GA Skirt</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱499</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/s3.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Barbie Skort</span>
+                            <span class="font-weight-bold">₱520</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModals3"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModals3"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabels3"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabels3"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/s3.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Barbie Skort</div>
+                                    <div class="row text-muted">GA Skort</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱529</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/s4.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Barbie Skort</span>
+                            <span class="font-weight-bold">₱520</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModals4"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModals4"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabels4"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabels4"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/s4.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Barbie Skort</div>
+                                    <div class="row text-muted">GA Skort</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱520</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/s5.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Barbie Denim Skort</span
+                            >
+                            <span class="font-weight-bold">₱520</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModals5"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModals5"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabels5"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabels5"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/s5.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Barbie Skirt</div>
+                                    <div class="row text-muted">GA Skirt</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱520</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/s6.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Barbie Denim Skirt</span
+                            >
+                            <span class="font-weight-bold">₱549</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModals6"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModals6"
+                    tabindex="-1"
+                    aria-labelledby="#exampleModalLabels6"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabels6">
+                            Your Shopping Cart
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <!-- modal image -->
+                        <div class="modal-body">
+                          <div class="row border-top border-bottom">
+                            <div class="row main align-items-center">
+                              <div class="col-4">
+                                <img
+                                  class="img-thumbnail"
+                                  src="./images/s6.jpg"
+                                />
+                              </div>
+                              <div class="col">
+                                <div class="row">Barbie Skirt</div>
+                                <div class="row text-muted">GA Skirt</div>
+                              </div>
+                              <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a
+                                ><a href="#">+</a>
+                              </div>
+                              <div class="col">₱520</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- div -->
+                  </div>
+                </div>
+                <!-- END SKIRT -->
+                <!-- TEES -->
+                <div id="tees" class="tab-pane in show">
+                  <h1 class="text-center mt-5">GIRL ALMIGHTEES</h1>
+                  <div class="row g-4 pt-5">
+                    <div class="col-lg-4">
+                      <div class="card">
+                        <img src="./images/t1.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Angel Baby Tee</span>
+                            <span class="font-weight-bold">₱259</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalt1"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalt1"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabelt1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabels1"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/t1.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Angel Baby Tee</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱259</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/t2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold"
+                              >Graphic Baby Tee</span
+                            >
+                            <span class="font-weight-bold">₱259</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalt2"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalt2"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabelt2"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabelt2"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/t2.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Graphic Baby Tee</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱259</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/t3.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Baby Tee Top</span>
+                            <span class="font-weight-bold">₱259</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalt3"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalt3"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabelt3"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabelt3"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/t3.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Baby Tee top</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱259</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/t4.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Baby Tee</span>
+                            <span class="font-weight-bold">₱259</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalt4"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalt4"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabelt4"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabelt4"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/t4.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Baby Tee</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱259</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/t5.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Baby Tee</span>
+                            <span class="font-weight-bold">₱259</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalt5"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalt5"
+                        tabindex="-1"
+                        aria-labelledby="#exampleModalLabelt5"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabelt5"
+                              >
+                                Your Shopping Cart
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <!-- modal image -->
+                            <div class="modal-body">
+                              <div class="row border-top border-bottom">
+                                <div class="row main align-items-center">
+                                  <div class="col-4">
+                                    <img
+                                      class="img-thumbnail"
+                                      src="./images/t5.jpg"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <div class="row">Baby Tee</div>
+                                    <div class="row text-muted">GA Pants</div>
+                                  </div>
+                                  <div class="col">
+                                    <a href="#">-</a
+                                    ><a href="#" class="border">1</a
+                                    ><a href="#">+</a>
+                                  </div>
+                                  <div class="col">₱259</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- div -->
+                      </div>
+                    </div>
+                    <!-- end skirt -->
+                    <!-- skirt -->
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./images/t6.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <span class="font-weight-bold">Oversized Tee</span>
+                            <span class="font-weight-bold">₱298</span>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="card-body">
+                          <div class="text-center buttons">
+                            <button class="btn btn-outline-dark mt-2">
+                              <i class="far fa-heart"></i>
+                              Add to favorites
+                            </button>
+                            <!-- button modal -->
+                            <button
+                              type="button"
+                              class="btn btn-dark mt-2"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalt6"
+                            >
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModalt6"
+                    tabindex="-1"
+                    aria-labelledby="#exampleModalLabelt6"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabelt6">
+                            Your Shopping Cart
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <!-- modal image -->
+                        <div class="modal-body">
+                          <div class="row border-top border-bottom">
+                            <div class="row main align-items-center">
+                              <div class="col-4">
+                                <img
+                                  class="img-thumbnail"
+                                  src="./images/t6.jpg"
+                                />
+                              </div>
+                              <div class="col">
+                                <div class="row">Oversized Tee</div>
+                                <div class="row text-muted">GA Pants</div>
+                              </div>
+                              <div class="col">
+                                <a href="#">-</a><a href="#" class="border">1</a
+                                ><a href="#">+</a>
+                              </div>
+                              <div class="col">₱259</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- div -->
+                  </div>
+                </div>
+                <!-- END TEES -->
+                <!-- div -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer pt-5">
+      <div class="container-fluid pt-1 pb-2 text-white">
+        <div class="row">
+          <div class="col-lg-11 m-auto">
+            <div class="row">
+              <div class="col-lg-2">
+                <h4 class="pb-3">Shop</h4>
+                <p class="m-0"><a href="shop.html">GA Pants</a></p>
+                <p class="m-0"><a href="shop.html">GA Skirt</a></p>
+                <p class="m-0"><a href="shop.html">GA Tees</a></p>
+              </div>
+              <div class="col-lg-2">
+                <h4 class="pb-3">Info</h4>
+                <p class="m-0"><a href="about.html">About Girl Almighty</a></p>
+              </div>
+              <div class="col-lg-3">
+                <h4 class="pb-3">Help</h4>
+                <p class="m-0"><a href="contact.html">Contact</a></p>
+                <p class="m-0"><a href="return.html">Return Policy</a></p>
+                <p class="m-0"><a href="checkout.html">Checkout Form</a></p>
+              </div>
+              <div class="col-lg-5">
+                <h3 class="pb-3">Subscribe</h3>
+                <p>Recieve product news and updates in your inbox.</p>
+                <form action="" class="d-flex">
+                  <input type="text" class="sub p-3" placeholder="Your Email" />
+                  <button class="btns mb-3">Subscribe</button>
+                </form>
+              </div>
+              <hr />
+              <section class="mb-4 text-center">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-floating btn-lg m-1"
+                  href="https://www.facebook.com/grlAlmghty"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Shopee -->
+                <a
+                  class="btn btn-floating btn-lg m-1"
+                  href="https://shopee.ph/girl__almighty___"
+                  role="button"
+                  ><i class="fas fa-shopping-bag" style="color: white"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-floating btn-lg m-1"
+                  href="https://www.instagram.com/girl__almighty___/"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3">© 2023 Copyright: Jasmine Dublado</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
